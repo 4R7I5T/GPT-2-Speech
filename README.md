@@ -1,4 +1,69 @@
-**Status:** Archive (code is provided as-is, no updates expected)
+# To get speech up and running:
+
+  # Mac
+  
+  sudo pip3 install espeak pyttsx pydub gTTS SpeechRecognition 
+
+  brew install ffmpeg 
+  brew install portaudio
+  
+  *From inside directory* 
+  
+  cd src/pyaudio
+  sudo python setup.py install
+  
+  
+  # Linux 
+  
+  sudo pip3 install pyttsx gTTS pydub SpeechRecognition 
+  sudo apt-get install espeak 
+  sudo apt-get install ffmpeg
+  
+  *From inside directory* 
+  
+  cd src/pyaudio
+  sudo python setup.py install
+  
+  sudo apt-get installl libportaudio-dev
+  sudo apt-get install python-dev
+  sudo apt-get install libportaudio0 libportaudio2 libportaudiocpp0 portaudio19-dev
+
+# Voices & Linux Support
+
+The code is set up to run out of the box on Mac, but with linux you will need to add in the reference to the voice model (I find they sound far more robotic than Apple's though) You can also use this script to find the other voices on Mac. 
+
+import pyttsx3
+engine = pyttsx3.init()
+
+voices = engine.getProperty('voices')
+for voice in voices:
+    print("Voice:")
+    print(" - ID: %s" % voice.id)
+    print(" - Name: %s" % voice.name)
+    print(" - Languages: %s" % voice.languages)
+    print(" - Gender: %s" % voice.gender)
+    print(" - Age: %s" % voice.age)
+    
+ It will print a long list like this one (done on Mac)
+      Voice:
+       - ID: com.apple.speech.synthesis.voice.Alex <---- you copy this 
+      Voice:
+       - ID: com.apple.speech.synthesis.voice.alice
+      Voice:
+       - ID: com.apple.speech.synthesis.voice.alva
+      Voice:
+       - ID: com.apple.speech.synthesis.voice.amelie
+      Voice:
+       - ID: com.apple.speech.synthesis.voice.anna
+
+    
+Next, you will go the "interactive_conditional_samples.py" file and edit line 19 to paste the path for the voice model
+
+# This is what you can expect from the command line 
+
+<img src="https://imgur.com/a/jxA3iyl"></img>
+
+# Remember to download the models as instructed below - setup is the same)
 
 # gpt-2
 
