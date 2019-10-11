@@ -61,7 +61,7 @@ Next, you will go the "interactive_conditional_samples.py" file and edit line 19
 
 # This is what you can expect from the command line 
 
-<img src="https://imgur.com/a/jxA3iyl"></img>
+<img src="https://i.imgur.com/4cMKifz.png"></img>
 
 # Remember to download the models as instructed below - setup is the same)
 
