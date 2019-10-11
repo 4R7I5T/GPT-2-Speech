@@ -2,31 +2,31 @@
 
   # Mac
   
-  sudo pip3 install espeak pyttsx pydub gTTS SpeechRecognition 
+    sudo pip3 install espeak pyttsx pydub gTTS SpeechRecognition 
 
-  brew install ffmpeg 
-  brew install portaudio
+    brew install ffmpeg 
+    brew install portaudio
   
   <b><i>From inside directory</i></b>
   
-  cd src/pyaudio
-  sudo python setup.py install
+    cd src/pyaudio
+    sudo python setup.py install
   
   
   # Linux 
   
-  sudo pip3 install pyttsx gTTS pydub SpeechRecognition 
-  sudo apt-get install espeak 
-  sudo apt-get install ffmpeg
+    sudo pip3 install pyttsx gTTS pydub SpeechRecognition 
+    sudo apt-get install espeak 
+    sudo apt-get install ffmpeg
   
   <b><i>From inside directory</i></b> 
   
-  cd src/pyaudio
-  sudo python setup.py install
-  
-  sudo apt-get installl libportaudio-dev
-  sudo apt-get install python-dev
-  sudo apt-get install libportaudio0 libportaudio2 libportaudiocpp0 portaudio19-dev
+    cd src/pyaudio
+    sudo python setup.py install
+
+    sudo apt-get installl libportaudio-dev
+    sudo apt-get install python-dev
+    sudo apt-get install libportaudio0 libportaudio2 libportaudiocpp0 portaudio19-dev
 
 # Voices & Linux Support
 
