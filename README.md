@@ -7,7 +7,7 @@
   brew install ffmpeg 
   brew install portaudio
   
-  <b>From inside directory</b>
+  <b><i>From inside directory</i></b>
   
   cd src/pyaudio
   sudo python setup.py install
@@ -19,7 +19,7 @@
   sudo apt-get install espeak 
   sudo apt-get install ffmpeg
   
-  *From inside directory* 
+  <b><i>From inside directory</i></b> 
   
   cd src/pyaudio
   sudo python setup.py install
@@ -45,14 +45,19 @@ for voice in voices:
     print(" - Age: %s" % voice.age)
     
  It will print a long list like this one (done on Mac)
+ 
       Voice:
        - ID: com.apple.speech.synthesis.voice.Alex <---- you copy this 
+       
       Voice:
        - ID: com.apple.speech.synthesis.voice.alice
+       
       Voice:
        - ID: com.apple.speech.synthesis.voice.alva
+       
       Voice:
        - ID: com.apple.speech.synthesis.voice.amelie
+       
       Voice:
        - ID: com.apple.speech.synthesis.voice.anna
 
