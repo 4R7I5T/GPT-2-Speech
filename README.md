@@ -7,7 +7,7 @@
   brew install ffmpeg 
   brew install portaudio
   
-  *From inside directory* 
+  <b>From inside directory</b>
   
   cd src/pyaudio
   sudo python setup.py install
