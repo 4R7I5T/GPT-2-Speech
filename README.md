@@ -1,8 +1,8 @@
 # To get speech up and running:
 
   # Mac
-  
-    sudo pip3 install espeak pyttsx pydub gTTS SpeechRecognition 
+    brew install espeak
+    sudo pip3 install pyttsx pydub gTTS SpeechRecognition 
 
     brew install ffmpeg 
     brew install portaudio
